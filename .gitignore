@@ -27,11 +27,11 @@
        linking syntax---> <script src="file.js"> </script>
 */
 
-//console logging(F12 opens console) --> displays only in console not in webpage.
+//console logging(F12 opens console) --> displays only in console not in webpage. which is used for debug
 //to open console click on inspect in your website. 
 console.log("this is console logging");
 
-
+not necessary to give ; end of the line
 //alerting
 alert("this is a alert message");
 
@@ -45,7 +45,7 @@ alert("this is a alert message");
 
 //VARIABLE KEYWORDS:
 // 1. var --> supports in all versions including old versions
-var name="sowndarya";
+var name="vennila";
 // 2. let --> introduced in 2015 
 let x=10;
 // 3. const --> introduced in 2015. [note : variables declared with const cannot be changed.]
@@ -71,7 +71,7 @@ console.log(msg);
     ->null
     ->undefined
 */
-let n="hello"; //string
+let n="hello"; //string let old version 
 let k=20; //integer
 let def=undefined; //undefined
 def=90; // we can reassign the undefined variables.
