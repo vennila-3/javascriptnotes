@@ -46,8 +46,15 @@ alert("this is a alert message");
 //VARIABLE KEYWORDS:
 // 1. var --> supports in all versions including old versions
 var name="vennila";
+
+*) global scope
+*) cant redeclare
+
 // 2. let --> introduced in 2015 
 let x=10;
+
+*) only block scope //if we decalre in loop we can't access outside of the loop
+*) we can redeclare
 // 3. const --> introduced in 2015. [note : variables declared with const cannot be changed.]
 const y=20.56;
 // 4. without keyword
