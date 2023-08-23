@@ -48,7 +48,7 @@ alert("this is a alert message");
 var name="vennila";
 
 *) global scope
-*) cant redeclare
+*) can redeclare
 
 *) ex
 
@@ -62,7 +62,7 @@ console.log(d);    o/p=200
 let x=10;
 
 *) only block scope //if we decalre in loop we can't access outside of the loop
-*) we can redeclare
+*) we can't redeclare
 
 *) ex
 let d=100;
