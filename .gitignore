@@ -50,11 +50,27 @@ var name="vennila";
 *) global scope
 *) cant redeclare
 
+*) ex
+
+var d=100;
+{
+    var d=200;
+}
+console.log(d);    o/p=200
+
 // 2. let --> introduced in 2015 
 let x=10;
 
 *) only block scope //if we decalre in loop we can't access outside of the loop
 *) we can redeclare
+
+*) ex
+let d=100;
+{
+    let d=200;
+}
+console.log(d);   o/p=100
+
 // 3. const --> introduced in 2015. [note : variables declared with const cannot be changed.]
 const y=20.56;
 // 4. without keyword
