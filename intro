@@ -336,6 +336,49 @@ function sub(c,d)
 let res=sub(10,20);
 console.log(res);
 
+Higher  Order Function
+   A function has another function as argument
+              or
+   A function return another function
+
+i)function a(c) {
+    console.log("hof");
+    c();
+    
+}
+function b() {
+    console.log("b()");
+}
+a(b);  //pass b as another  function name
+
+ii) return another function
+
+function a(c) {
+    return function (n) {
+        return n*c;
+        
+    }
+}
+
+console.log(a(2)(4));
+
+
+
+CALLBACK FUNCTION
+function a(callback) {
+    console.log("hiiiiii");
+    callback();
+}
+function nextfun()
+{
+console.log("hello");
+}
+
+a(nextfun)
+
+
+
+
 //----------------------------------------JS OBJECT & OOP--------------------------------------------
 let nam="mahesh";
 let dob="25/08/2002";
@@ -518,6 +561,17 @@ setTimeout(()=>console.log('step 2 async'),2000);
   - after the time interval for the particular timeout func,browser adds it to queue.
   - after call stack gets empty, all the func inside queue executes based on FIFO order.
 */
+
+
+function greet(name,callback) {
+    console.log("greet")
+    setTimeout(()=>callback("hello" +name),3000); 
+}
+ function display(params) {
+    console.log(params);
+ }
+greet("raj",display);
+
 
 //-------------------------------------------PROMISE----------------------------------------
 /* 
