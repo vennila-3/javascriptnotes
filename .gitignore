@@ -85,6 +85,13 @@ console.log(msg);
 // NOTE : default value of variabe --> "undefined".
 
 
+feature     var    let    const
+scope      function  block   block
+hoisting   yes       no      no
+reassign   yes       yes     no
+redeclare  no        no      no
+
+
 //----------------------DATATYPES---------------------
 /* datatypes are classified into two types :
 * PRIMITIVE DATATYPES :                  * NON-PRIMITIVE DATATYPES :
