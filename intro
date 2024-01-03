@@ -548,6 +548,7 @@ Synchrounous JS :
 Asynchronous JS:
 * in asynchronous JS, steps execute simultaneously.
 * Asynchrounous is not blocking.
+it has 2 argument one is callback another one is time
  */
 console.log('step 1 sync');
 console.log('step2 sync');
@@ -562,10 +563,23 @@ setTimeout(()=>console.log('step 2 async'),2000);
   - after call stack gets empty, all the func inside queue executes based on FIFO order.
 */
 
+ //setTimeOut
 
 function greet(name,callback) {
     console.log("greet")
     setTimeout(()=>callback("hello" +name),3000); 
+}
+ function display(params) {
+    console.log(params);
+ }
+greet("raj",display);
+
+
+//SetInterval
+function greet(name,callback) {
+    console.log("greet")
+    setInterval(()=>callback("hello " +name),3000); 
+   
 }
  function display(params) {
     console.log(params);
@@ -729,6 +743,25 @@ let json5={
 }
 let jsonstr=JSON.stringify(json5);
 console.log(jsonstr);
+
+
+////-------------------------------map filter reduce --------------------------------------------------
+ creates a new array from calling a function for every array element.
+ does not execute the function for empty elements.
+ does not change the original array.
+const arr=[1,2,3,6,4];
+const maparray=arr.map((el)=>{
+return el*2
+})
+
+console.log(maparray);
+
+ foreach and map doing same work iterate the element 
+but foreach doesnot return array it will change the value
+
+   --------- Filter  ---------
+
+
 
 
 //---------------------------------------------API-------------------------------------------
