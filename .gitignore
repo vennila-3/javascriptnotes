@@ -89,7 +89,7 @@ feature     var    let    const
 scope      function  block   block
 hoisting   yes       no      no
 reassign   yes       yes     no
-redeclare  no        no      no
+redeclare  yes        no      no
 
 
 //----------------------DATATYPES---------------------
