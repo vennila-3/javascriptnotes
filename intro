@@ -375,16 +375,16 @@ console.log(a(2)(4));
 
 
 CALLBACK FUNCTION
-function a(callback) {
+function Employee(callback) {
     console.log("hiiiiii");
     callback();
 }
-function nextfun()
+function empName()
 {
 console.log("hello");
 }
 
-a(nextfun)
+Employee(empName)
 
 
 
